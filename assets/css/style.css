@@ -4,9 +4,33 @@ body{
     min-height: 100vh;
     min-width: 100%;
     font-family: "Mulish", Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: #B1C9A5;
 }
+/*Header styles*/
 header{
 height: 10vh;
-background-color: aqua;
+background-color: #B1C9A5;
+display: flex;
+justify-content: center;
 }
+ h1 {
+    font-size: 3rem;
+    margin-right: 20px;
+ }
+ /*Main styles*/
+ main{
+display: flex;
+justify-content: center;
+
+ }
+ /*The Whole to do List*/
+ #the-big-div {
+    background-color: white;
+    height: 20vh;
+    margin-top: 10vh;
+    width: 44vh;
+    margin-right: 15px;
+    border-radius: 5px;
+    padding-left: 8px;
+    
+ }
