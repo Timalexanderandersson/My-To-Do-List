@@ -87,14 +87,85 @@ margin-top: 20px;
 width: 35vh;
 height: auto;
 }
+
+
+
+
+
 /*For devices over 768px*/
 @media (min-width: 768px){
 
+/*Text Input area*/
+#textareahere{
+  width: 300px;
+  margin-left: 20px;
+  padding-left: 15px;
+   
+}
+/* task title*/
+h2{
+    font-size: 1.9rem;
+    margin-left: 20px;
+}
+/*Add button*/
+#theaddbutton{
+margin-left: 10px;
+}
+/*The Whole to do List*/
+#the-big-div {
+    
+    min-height: 25vh;
+    margin-top: 13vh;
+    width: 50vh;
+  
+}
+/*Task area for list*/
+#HereGoesTheTask{
+    
+    margin-top: 30px;
+    width: 45vh;
+    margin-left: 15px;
+    
+    }
 
 }
 
+
+
+
+
+
 /*For devides over 992px*/
 @media (min-width: 992px){
+
+
+    /*The Whole to do List*/
+#the-big-div {
+    
+    min-height: 30vh;
+    margin-top: 13vh;
+    width: 63vh;
+  
+}
+/* task title*/
+h2{
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+
+
+
+
+/*Task area for list*/
+#HereGoesTheTask{
+    
+    margin-top: 40px;
+    width: 57vh;
+    margin-left: 15px;
+    
+    }
+
 
 
 }
