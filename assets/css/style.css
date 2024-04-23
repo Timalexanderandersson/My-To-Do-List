@@ -39,7 +39,7 @@ h2{
     background-color: white;
     height:auto;
     min-height: 23vh;
-    margin-top: 10vh;
+    margin-top: 13vh;
     width: 44vh;
     margin-right: 15px;
     border-radius: 5px;
@@ -87,4 +87,14 @@ margin-top: 20px;
 width: 35vh;
 height: auto;
 }
+/*For devices over 768px*/
+@media (min-width: 768px){
 
+
+}
+
+/*For devides over 992px*/
+@media (min-width: 992px){
+
+
+}
