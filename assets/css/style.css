@@ -79,3 +79,13 @@ h2{
     border-width: 1px;
     
 }
+
+#HereGoesTheTask{
+    background-color: white;
+    height: 20vh;
+    margin-top: 7vh;
+    width: 40vh;
+    
+    border-radius: 5px;
+   
+}
