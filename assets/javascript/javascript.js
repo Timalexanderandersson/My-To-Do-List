@@ -20,7 +20,7 @@ function AddYourTask() {
     HereGoesText.appendChild(TheNewListTask);
     TheNewListTask.appendChild(TheDeleteButton);
 
-
+TheDeleteButton.addEventListener('click',DeleteTheTask)
 
     console.log('AddYourTask working')
 };
