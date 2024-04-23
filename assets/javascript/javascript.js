@@ -20,16 +20,6 @@ function AddYourTask() {
     HereGoesText.appendChild(TheNewListTask);
     TheNewListTask.appendChild(TheDeleteButton);
 
-TheDeleteButton.addEventListener('click',DeleteTheTask)
-
-    console.log('AddYourTask working')
-};
-
-// EventListener for AddYourTask function.
-AddButton.addEventListener('click', AddYourTask,
-    console.log('event working')
-);
-
 
     // Delete Function for Task
     function DeleteTheTask() {
@@ -38,3 +28,12 @@ AddButton.addEventListener('click', AddYourTask,
         TheNewListTask.removeChild(TheDeleteButton);
         console.log('Delete item')
     };
+
+    //EventListener for DeleteTheTask function
+    TheDeleteButton.addEventListener('click', DeleteTheTask)
+
+    console.log('AddYourTask working')
+};
+
+// EventListener for AddYourTask function.
+AddButton.addEventListener('click', AddYourTask);
