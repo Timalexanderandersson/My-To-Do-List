@@ -37,7 +37,8 @@ h2{
 /*The Whole to do List*/
 #the-big-div {
     background-color: white;
-    height: 20vh;
+    height:auto;
+    min-height: 23vh;
     margin-top: 10vh;
     width: 44vh;
     margin-right: 15px;
@@ -79,13 +80,11 @@ h2{
     border-width: 1px;
     
 }
-
+/*Task Div list*/
 #HereGoesTheTask{
-    background-color: white;
-    height: 20vh;
-    margin-top: 7vh;
-    width: 40vh;
-    
-    border-radius: 5px;
-   
+border-top: 1px solid black;
+margin-top: 20px;
+width: 35vh;
+height: auto;
 }
+
