@@ -40,8 +40,8 @@ h2{
     height:auto;
     min-height: 23vh;
     margin-top: 13vh;
-    width: 44vh;
-    margin-right: 15px;
+    width: 50vh;
+    margin-right: 18px;
     border-radius: 5px;
     padding-left: 8px;
 }
@@ -52,10 +52,37 @@ h2{
     border-style: solid;
     border-color:  #B1C9A5;
     border-width: 2px;
+}
+
+
+/*List Here*/
+.ClassList{
+    width: auto;
+    list-style: none;
+    margin-top: 12px;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
    
 }
 
 
+
+
+
+/*Delete Button here*/
+.NewDeleteButton {
+    border-radius: 5px;
+    padding:2px;
+    background-color: #B1C9A5;
+    border-style: none;
+    margin-left: 29vh;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+  
+}
 
 /*Add button*/
 #theaddbutton{
@@ -80,12 +107,19 @@ h2{
     border-width: 1px;
     
 }
+
+
+
+
+
+
 /*Task Div list*/
 #HereGoesTheTask{
 border-top: 1px solid black;
 margin-top: 20px;
 width: 35vh;
 height: auto;
+
 }
 
 

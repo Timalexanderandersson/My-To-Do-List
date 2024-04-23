@@ -20,6 +20,10 @@ function AddYourTask() {
     HereGoesText.appendChild(TheNewListTask);
     TheNewListTask.appendChild(TheDeleteButton);
 
+    TheDeleteButton.classList.add('NewDeleteButton');
+    TheNewListTask.classList.add('ClassList');
+
+
 
     // Delete Function for Task
     function DeleteTheTask() {
@@ -28,6 +32,8 @@ function AddYourTask() {
         TheNewListTask.removeChild(TheDeleteButton);
         console.log('Delete item')
     };
+
+
 
     //EventListener for DeleteTheTask function
     TheDeleteButton.addEventListener('click', DeleteTheTask)
