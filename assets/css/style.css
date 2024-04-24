@@ -122,6 +122,25 @@ h2 {
 
 
 
+
+/*Div for delete button */
+#DivForDelete{
+    width: 240px;
+    margin-top: 10px;
+  
+
+}
+/*The delete all button */
+#DeleteAll{
+  margin-left: 170px;
+  background-color: #B1C9A5;
+  border-style: none;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+
+
 /*Task Div list*/
 #HereGoesTheTask {
     border-top: 1px solid black;

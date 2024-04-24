@@ -43,7 +43,7 @@ function AddYourTask() {
           
             console.log('Delete item')
         };
-
+/*Add text to to counter*/
         if(taskCounterhere === 1){
             newTaskCOunter.innerHTML = 'You have'+' '+ taskCounterhere +' '+'thing do.'
         }else {
