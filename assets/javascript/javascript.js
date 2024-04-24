@@ -21,6 +21,7 @@ function AddYourTask() {
         TheNewListTask.innerText = ThetextValue;
         HereGoesText.appendChild(TheNewListTask);
         HereGoesText.appendChild(TheDeleteButton);
+        TextInputArea.value = '';
 
         TheDeleteButton.classList.add('NewDeleteButton');
         TheNewListTask.classList.add('ClassList');
