@@ -1,4 +1,8 @@
 /* General styles here*/
+*{
+    margin:0;
+    padding:0;
+}
 
 body {
     min-height: 100vh;
@@ -14,7 +18,7 @@ header {
     background-color: #B1C9A5;
     display: flex;
     justify-content: center;
-   
+
 }
 
 h1 {
@@ -30,41 +34,46 @@ main {
     justify-content: center;
 
 }
-h2{
+
+h2 {
+    margin-top: 10px;
     font-size: 1.5rem;
 }
 
 /*The Whole to do List*/
 #the-big-div {
     background-color: white;
-    height:auto;
-    min-height: 23vh;
+    height: auto;
+    min-height: 25vh;
     margin-top: 13vh;
-    width: 50vh;
-    margin-right: 18px;
+    max-width: 50vh;
     border-radius: 5px;
     padding-left: 8px;
+    padding-right:10px;
+    padding-bottom: 10px;
+
 }
+
 /*Text Input area*/
-#textareahere{
-    padding:7px;
+#textareahere {
+    margin-top: 10px;
+    padding: 7px;
     border-radius: 8px;
     border-style: solid;
-    border-color:  #B1C9A5;
+    border-color: #B1C9A5;
     border-width: 2px;
 }
 
 
 /*List Here*/
-.ClassList{
-    width: auto;
+.ClassList {
+    max-width: 185px;
+    position: absolute;
+    word-wrap: break-word;
     list-style: none;
-    margin-top: 12px;
-    height: auto;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-   
+    margin-top: 10px;
+    font-size: small;
 }
 
 
@@ -74,38 +83,42 @@ h2{
 /*Delete Button here*/
 .NewDeleteButton {
     border-radius: 5px;
-    padding:2px;
     background-color: #B1C9A5;
     border-style: none;
-    margin-left: 29vh;
-    position: absolute;
-    display: flex;
-    justify-content: end;
-  
+    margin-left: 27vh;
+    margin-bottom: 10px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+
+
+
 }
 
 /*Add button*/
-#theaddbutton{
+#theaddbutton {
     padding: 8px 13px 8px 13px;
-    
-    background-color:#B1C9A5;
+
+    background-color: #B1C9A5;
     border-radius: 8px;
     border-style: none;
-    font-weight:500;
+    font-weight: 500;
     margin-left: 5px;
 }
 
 /*Button extra*/
 #theaddbutton:hover {
-    background-color:#9db192;
+    background-color: #9db192;
 }
 
-#theaddbutton:active{
+#theaddbutton:active {
     background-color: white;
-    border-color:#9db192; ;
+    border-color: #9db192;
+    ;
     border-style: solid;
     border-width: 1px;
-    
+
 }
 
 
@@ -114,11 +127,12 @@ h2{
 
 
 /*Task Div list*/
-#HereGoesTheTask{
-border-top: 1px solid black;
-margin-top: 20px;
-width: 35vh;
-height: auto;
+#HereGoesTheTask {
+    border-top: 1px solid black;
+    margin-top: 20px;
+    width: 35vh;
+    position:sticky;
+
 
 }
 
@@ -127,39 +141,43 @@ height: auto;
 
 
 /*For devices over 768px*/
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-/*Text Input area*/
-#textareahere{
-  width: 300px;
-  margin-left: 20px;
-  padding-left: 15px;
-   
-}
-/* task title*/
-h2{
-    font-size: 1.9rem;
-    margin-left: 20px;
-}
-/*Add button*/
-#theaddbutton{
-margin-left: 10px;
-}
-/*The Whole to do List*/
-#the-big-div {
-    
-    min-height: 25vh;
-    margin-top: 13vh;
-    width: 50vh;
-  
-}
-/*Task area for list*/
-#HereGoesTheTask{
-    
-    margin-top: 30px;
-    width: 45vh;
-    margin-left: 15px;
-    
+    /*Text Input area*/
+    #textareahere {
+        width: 300px;
+        margin-left: 20px;
+        padding-left: 15px;
+
+    }
+
+    /* task title*/
+    h2 {
+        font-size: 1.9rem;
+        margin-left: 20px;
+    }
+
+    /*Add button*/
+    #theaddbutton {
+        margin-left: 10px;
+    }
+
+    /*The Whole to do List*/
+    #the-big-div {
+
+        min-height: 25vh;
+        margin-top: 13vh;
+        width: 50vh;
+
+    }
+
+    /*Task area for list*/
+    #HereGoesTheTask {
+
+        margin-top: 30px;
+        width: 45vh;
+        margin-left: 15px;
+
     }
 
 }
@@ -170,34 +188,41 @@ margin-left: 10px;
 
 
 /*For devides over 992px*/
-@media (min-width: 992px){
+@media (min-width: 992px) {
 
 
     /*The Whole to do List*/
-#the-big-div {
-    
-    min-height: 30vh;
-    margin-top: 13vh;
-    width: 63vh;
-  
-}
-/* task title*/
-h2{
-    font-size: 2rem;
-    margin-left: 30px;
-}
+    #the-big-div {
+
+        min-height: 30vh;
+        margin-top: 13vh;
+        min-width: 63vh;
+
+    }
+
+    /* task title*/
+    h2 {
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    #textareahere {
+        width: 320px;
+        margin-left: 20px;
+        padding-left: 15px;
+
+    }
 
 
 
 
 
-/*Task area for list*/
-#HereGoesTheTask{
-    
-    margin-top: 40px;
-    width: 57vh;
-    margin-left: 15px;
-    
+    /*Task area for list*/
+    #HereGoesTheTask {
+
+        margin-top: 40px;
+        width: 57vh;
+        margin-left: 15px;
+
     }
 
 

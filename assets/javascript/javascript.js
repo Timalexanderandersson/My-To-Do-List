@@ -18,7 +18,7 @@ function AddYourTask() {
 
     TheNewListTask.innerText = ThetextValue;
     HereGoesText.appendChild(TheNewListTask);
-    TheNewListTask.appendChild(TheDeleteButton);
+    HereGoesText.appendChild(TheDeleteButton);
 
     TheDeleteButton.classList.add('NewDeleteButton');
     TheNewListTask.classList.add('ClassList');
