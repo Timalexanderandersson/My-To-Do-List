@@ -29,7 +29,7 @@ function AddYourTask() {
     function DeleteTheTask() {
 
         HereGoesText.removeChild(TheNewListTask);
-        TheNewListTask.removeChild(TheDeleteButton);
+        HereGoesText.removeChild(TheDeleteButton);
         console.log('Delete item')
     };
 
