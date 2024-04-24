@@ -11,32 +11,34 @@ let HereGoesText = document.getElementById('HereGoesTheTask');
 function AddYourTask() {
 
     let ThetextValue = TextInputArea.value;
+    if (ThetextValue === '') {
+        alert('No Added text!')
+    } else {
+        let TheDeleteButton = document.createElement('button');
+        TheDeleteButton.innerText = 'Delete';
+        let TheNewListTask = document.createElement('li');
 
-    let TheDeleteButton = document.createElement('button');
-    TheDeleteButton.innerText = 'Delete';
-    let TheNewListTask = document.createElement('li');
+        TheNewListTask.innerText = ThetextValue;
+        HereGoesText.appendChild(TheNewListTask);
+        HereGoesText.appendChild(TheDeleteButton);
 
-    TheNewListTask.innerText = ThetextValue;
-    HereGoesText.appendChild(TheNewListTask);
-    HereGoesText.appendChild(TheDeleteButton);
+        TheDeleteButton.classList.add('NewDeleteButton');
+        TheNewListTask.classList.add('ClassList');
 
-    TheDeleteButton.classList.add('NewDeleteButton');
-    TheNewListTask.classList.add('ClassList');
+        /* Delete Function for Task*/
+        function DeleteTheTask() {
 
-
-
-    // Delete Function for Task
-    function DeleteTheTask() {
-
-        HereGoesText.removeChild(TheNewListTask);
-        HereGoesText.removeChild(TheDeleteButton);
-        console.log('Delete item')
-    };
+            HereGoesText.removeChild(TheNewListTask);
+            HereGoesText.removeChild(TheDeleteButton);
+            console.log('Delete item')
+        };
 
 
+        /*EventListener for DeleteTheTask function*/
+        TheDeleteButton.addEventListener('click', DeleteTheTask)
+    }
 
-    //EventListener for DeleteTheTask function
-    TheDeleteButton.addEventListener('click', DeleteTheTask)
+
 
     console.log('AddYourTask working')
 };
