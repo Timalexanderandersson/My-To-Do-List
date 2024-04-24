@@ -4,6 +4,7 @@ let TextInputArea = document.getElementById('textareahere');
 let AddButton = document.getElementById('theaddbutton');
 let HereGoesText = document.getElementById('HereGoesTheTask');
 let newTaskCOunter = document.getElementById('MyCounterHere');
+let DeleteAllButton = document.getElementById('DeleteAll')
 
 
 
@@ -28,26 +29,30 @@ function AddYourTask() {
         ++taskCounterhere;
         TheDeleteButton.classList.add('NewDeleteButton');
         TheNewListTask.classList.add('ClassList');
-        
 
-    
-        
+
+
+
 
         /* Delete Function for Task*/
         function DeleteTheTask() {
 
             HereGoesText.removeChild(TheNewListTask);
             HereGoesText.removeChild(TheDeleteButton);
-            taskCounterhere--;     
-            newTaskCOunter.innerHTML = 'You have'+' '+ taskCounterhere +' '+'things to do.'
-          
+            taskCounterhere--;
+            newTaskCOunter.innerHTML = 'You have' + ' ' + taskCounterhere + ' ' + 'things to do.'
+            if (taskCounterhere === 0) {
+                newTaskCOunter.innerHTML = '';
+            } else {
+                newTaskCOunter.innerHTML = 'You have' + ' ' + taskCounterhere + ' ' + 'things to do.'
+            }
             console.log('Delete item')
         };
-/*Add text to to counter*/
-        if(taskCounterhere === 1){
-            newTaskCOunter.innerHTML = 'You have'+' '+ taskCounterhere +' '+'thing do.'
-        }else {
-            newTaskCOunter.innerHTML = 'You have'+' '+ taskCounterhere +' '+'things to do.'
+        /*Add text to to counter*/
+        if (taskCounterhere === 1) {
+            newTaskCOunter.innerHTML = 'You have' + ' ' + taskCounterhere + ' ' + 'thing do.'
+        } else {
+            newTaskCOunter.innerHTML = 'You have' + ' ' + taskCounterhere + ' ' + 'things to do.'
         }
 
 
@@ -62,3 +67,15 @@ function AddYourTask() {
 
 // EventListener for AddYourTask function.
 AddButton.addEventListener('click', AddYourTask);
+
+
+
+/*Delete all function*/
+function DeleteAllThings() {
+    HereGoesText.textContent = '';
+    newTaskCOunter.innerHTML = '';
+    taskCounterhere = 0;
+    console.log('delete all things')
+}
+
+DeleteAllButton.addEventListener('click', DeleteAllThings)
