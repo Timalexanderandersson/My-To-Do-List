@@ -179,6 +179,19 @@ h2 {
         margin-left: 15px;
 
     }
+    /*List Here*/
+.ClassList {
+    max-width: 350px;
+}
+
+
+
+/*Delete Button here*/
+.NewDeleteButton {
+
+    margin-left: 42vh;
+
+}
 
 }
 
@@ -224,6 +237,19 @@ h2 {
         margin-left: 15px;
 
     }
+     /*List Here*/
+.ClassList {
+    max-width: 430px;
+}
+
+
+
+/*Delete Button here*/
+.NewDeleteButton {
+
+    margin-left: 50vh;
+
+}
 
 
 
