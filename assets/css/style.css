@@ -113,11 +113,10 @@ h2 {
 }
 
 #theaddbutton:active {
-    background-color: white;
+    background-color: rgb(230, 243, 230);
     border-color: #9db192;
-    ;
-    border-style: solid;
-    border-width: 1px;
+   
+    
 
 }
 
