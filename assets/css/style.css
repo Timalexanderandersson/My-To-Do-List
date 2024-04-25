@@ -75,10 +75,9 @@ h2 {
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: small;
+    margin-left: 5px;
+  
 }
-
-
-
 
 
 /*Delete Button here*/
@@ -207,6 +206,21 @@ h2 {
         margin-left: 42vh;
 
     }
+    /*Delete all div*/
+    #DivForDelete{
+        width: 500px;
+    }
+ 
+    /*Delete All Button*/
+    #DeleteAll{
+        margin-left: 330px;
+    }
+    /* Counter Div*/
+    #MyCounterHere{
+        margin-left: 20px;
+    }
+
+
 
 }
 
@@ -267,7 +281,21 @@ h2 {
         margin-left: 50vh;
 
     }
+    /*Delete all div*/
+    #DivForDelete{
+        width: 500px;
+    }
 
+
+    
+    /*Delete All Button*/
+    #DeleteAll{
+        margin-left: 400px;
+    }
+    /* Counter Div*/
+    #MyCounterHere{
+        margin-left: 30px;
+    }
 
 
 }
